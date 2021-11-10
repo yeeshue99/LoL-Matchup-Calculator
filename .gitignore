@@ -129,13 +129,13 @@ dmypy.json
 .pyre/
 
 # Packages
-.zip
-.tar
-.tgz
-.rar
+*.zip
+*.tar
+*.tgz
+*.rar
 
 # SQL Scripts
-.sql
+*.sql
 
 # League assets
 data_dragon/
