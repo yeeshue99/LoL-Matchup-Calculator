@@ -134,8 +134,10 @@ dmypy.json
 *.tgz
 *.rar
 
-# SQL Scripts
+# Database
 *.sql
+*.sqlite
+*.sqlite3
 
 # League assets
 data_dragon/
