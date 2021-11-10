@@ -133,3 +133,6 @@ dmypy.json
 .tar
 .tgz
 .rar
+
+# SQL Scripts
+.sql
