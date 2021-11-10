@@ -136,3 +136,6 @@ dmypy.json
 
 # SQL Scripts
 .sql
+
+# League assets
+data_dragon/
