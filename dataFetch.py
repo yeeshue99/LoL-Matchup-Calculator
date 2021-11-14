@@ -6,19 +6,19 @@ def getPatchData():
     data = r.json()
     return data
 
-def getLastFivePatches(region):
+def getLastNumberPatches(region, number):
     data = getPatchData()
     patches = data['patches']
     offset = data['shifts'][region]
-    lastFivePatches = patches[-5:]
+    lastFivePatches = patches[-number:]
     return lastFivePatches, offset
 
-def getStartTimeOfFifthLastPatch(region):
-    data, offset = getLastFivePatches(region)
+def getStartTimeOfFifthLastPatch(region, number):
+    data, offset = getLastNumberPatches(region, number)
     return data[0]['start'], offset
 
-def calculateStartTime(region = REGION):
-    data, offset = getStartTimeOfFifthLastPatch(region)
+def calculateStartTime(region = REGION, number = 5):
+    data, offset = getStartTimeOfFifthLastPatch(region, number)
     return data + offset
 
 def downloadChampionBasicData():
