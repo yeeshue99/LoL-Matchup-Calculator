@@ -138,6 +138,8 @@ dmypy.json
 *.sql
 *.sqlite
 *.sqlite3
+cachedPlayers/
+PlayerSummaries/
 
 # League assets
 data_dragon/
